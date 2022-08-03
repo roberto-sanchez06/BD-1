@@ -17,9 +17,9 @@ el grado de una relacion es el numero de entidades que participan en una relacio
 
 binaria, ternaria 
 
-atributos de suscriptor: nombre, domicilio, estado (se puede calcular)
+atributos de suscriptor: nombre, domicilio, estado (se puede calcular), cedula
 
-atributos de revista: titulo, montoMatricula, montoCuota
+atributos de revista: titulo, montoMatricula, montoCuota, codigo
 
 los verbos igual que los sujetos deben cumplircon la condicion del si, pago ya que suscriptor paga la sucripcion 
 
@@ -31,3 +31,6 @@ fecha es un atributo de suscripcion
 
 consulta: revisar si tienen las cuotas al dia 
 el suscriptor renueva suscripcion, fecha es un atributo de renovar
+
+si algo se puede calcular no va en atributos 
+un suscriptor puede estar suscritos a muchas revistas 
