@@ -1,0 +1,33 @@
+necesito guardar informacion del sujeto?
+si la respuesta es si es una entidad candidata a guardar
+
+todo sistema es una caja fuerte, todo sistema tiene entradas y salidas, si el sujeto 1 tine una salida, es decir sus 
+atributos son parte de la salida, necesitamos guardar la informacion de ese sujeto
+
+si no hay una salida asociada a ese sujeto no debemos guardarlo 
+los nombres de los sujetos es en singular 
+
+ejercicio 2
+sujetos: lectores/suscriptores, revista
+
+las relaciones se representan por rombos, los sujetos por rectangulos, las relacion son verbos y unen sujetos
+	A -------- nombre de relacion --------- B
+
+el grado de una relacion es el numero de entidades que participan en una relacion
+
+binaria, ternaria 
+
+atributos de suscriptor: nombre, domicilio, estado (se puede calcular)
+
+atributos de revista: titulo, montoMatricula, montoCuota
+
+los verbos igual que los sujetos deben cumplircon la condicion del si, pago ya que suscriptor paga la sucripcion 
+
+verbos: suscripcon sinonimo de inscripcion, suscriptor se suscribe a una revista
+
+la palabra difiere nos indica que depende de algo
+cuota y fecha de pago es un atributo del pago
+fecha es un atributo de suscripcion 
+
+consulta: revisar si tienen las cuotas al dia 
+el suscriptor renueva suscripcion, fecha es un atributo de renovar
