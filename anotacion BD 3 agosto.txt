@@ -1,3 +1,5 @@
+ANOTACION 3 DE AGOSTO
+
 necesito guardar informacion del sujeto?
 si la respuesta es si es una entidad candidata a guardar
 
@@ -35,27 +37,30 @@ el suscriptor renueva suscripcion, fecha es un atributo de renovar
 si algo se puede calcular no va en atributos 
 un suscriptor puede estar suscritos a muchas revistas 
 
+ANOTACION 9 DE AGOSTO 
+
 un objeto tiene comportamiento, identidad y elementos
 
 entidad: nombre, atributos y operaciones o metodos, las relaciones son tablas, los sujetos tambien
 tipos de atributo: private, protected y public 
-los atributos drivados van con check
+los atributos derivados van con check
 los atributos pueden restringirse
 
 diagrama: clase, atributos, metodos, ambito de atributo, restriccion de atributos, ambito de metodo, cardinalidad o multiplicidad,
 asociaciones, roles, restricciones en relaciones 
+
 dentro de las llaves van restricciones +
-relacion: linea con el nombre de verbo, si necesitamos guardar elementos de esa relacino entonces es una
-clase de asociacion 
+
+relacion: linea con el nombre de verbo, si necesitamos guardar elementos de esa relacion entonces es una clase de asociacion 
 clasificacion de relaciones: generalizacion, asociacion, ensamblados 
 la herencia se representa con flechas 
 lor roles se ponen abajo de la asociacion 
 puedeb haber dos asociaciones 
-las restriccione van en ()
-cuando hay mas de dos clases relacionadas usamos en rombo y las ponemos en clases de asociacion 
+las restriccione van en () o {}
+cuando hay mas de dos clases relacionadas usamos un rombo y las ponemos en clases de asociacion 
 asociaciones reflexivas: va hacia ella misma
 
 TAREA pafa jueves 9 de agosto
-	obtener el diagrama de clases del siguiente adajio popular:
+	obtener el diagrama de clases del siguiente adagio popular:
 	un abogado que se defiende a su mismo es un tonto
 	
