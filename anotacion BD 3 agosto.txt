@@ -47,7 +47,7 @@ los atributos derivados van con check
 los atributos pueden restringirse
 
 diagrama: clase, atributos, metodos, ambito de atributo, restriccion de atributos, ambito de metodo, cardinalidad o multiplicidad,
-asociaciones, roles, restricciones en relaciones 
+asociaciones, roles, restricciones en relaciones, asociaciones calificadas  
 
 dentro de las llaves van restricciones +
 
@@ -64,3 +64,24 @@ TAREA pafa jueves 9 de agosto
 	obtener el diagrama de clases del siguiente adagio popular:
 	un abogado que se defiende a su mismo es un tonto
 	
+
+ANOTACION 11 DE AGOSTO
+un atirubto de liga es una propiedad de asociacion, una clase de asociacion puede estar ligada a otra clase de asociacion, 
+si un verbo depende de otro verbo es una clase de asociacion
+
+asociaciones calificadas, es como el id
+asociacion n arias se pone el rombo 
+asociacion derivada
+las restricciones van entre {}
+
+* Dependencia o instacias: es con lineas discontinuas 
+* ensamblados: agregacion y composicion 
+
+agregacion: el objeto base usa al incluido para su funcionamiento 
+composicion: el objeto base se construye a partir del objeto incluido, el rombo va rellenado, para ser 
+
+si necesita obligatoriamente es composicion, de lo contrario es agregacion 
+
+restricciones en las agregaciones: con linea discontinua en las prop
+
+diasgrama de contexto de composicion: muestra componetes de una clase dentro de un enorme rectangulo de clase 
