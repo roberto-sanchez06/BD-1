@@ -85,3 +85,16 @@ si se necesita obligatoriamente es composicion, de lo contrario es agregacion
 restricciones en las agregaciones: con linea discontinua en las prop
 
 diasgrama de contexto de composicion: muestra componetes de una clase dentro de un enorme rectangulo de clase 
+
+/// 16 de agosto
+
+Estudiante: cod e, nombre, apellido, dni, direccion
+solicitud: id solicitud, cod beca, cod e, fecha 
+beca: cod beca, nombre, requisito
+
+1FN: Todos los atributos debe de ser atomico
+2FN: Campos llave 
+3FN: las asociaciones deben de llevar los campos llaves de el y los campos llaves de las clases que asocia 
+
+la pregunta para sacar la multiplicidad se debe de preguntar cuantas veces se repite el campo llave, en el caso del 
+ejemplo es una relacion de 1 a muchos 
