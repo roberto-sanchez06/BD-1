@@ -98,3 +98,92 @@ add foreign key (IdRepuesto) references Repuesto(IdRepuesto)
 
 Backup database Taller
 to disk = 'D:\Algo\RespaldoTaller.bak'
+
+--restore database Taller
+--from disk = 'D:\Algo\RespaldoTaller.bak'
+--with replace 
+
+-- parte 2 de la guia
+
+insert into Cliente(Primer_Nombre, Primer_Apellido, Cedula, Correo)
+values ('Pedro', 'Romero','001-122112-0029N', 'pedro@gmail.com')
+
+select * from Cliente
+
+insert into Cliente(Primer_Nombre, Primer_Apellido, Cedula, Correo)
+values ('Ana', 'Fuentes','001-120394-0259N', 'ana@gmail.com')
+
+exec sp_rename 'Cliente.Primar_Apellido', 'Primer_Apellido'
+
+insert into Cliente(Primer_Nombre, Primer_Apellido, Cedula, Correo)
+values ('Ana', 'de Armas','001-190924-0659N', 'ana2@gmail.com')
+
+update Cliente set Correo='pedro@hotmail.com' 
+where IdCliente=0
+
+delete from Cliente where IdCliente = 2
+
+delete from Cliente
+
+use master
+drop database Taller
+
+restore headeronly from disk ='D:\algo\RespaldoTaller.bak'
+
+restore filelistonly from disk = 'D:\algo\RespaldoTaller.bak'
+
+-- Guia numero 3
+restore database Taller
+from disk ='D:\algo\RespaldoTaller.bak'
+with replace 
+
+use Taller
+
+select * from Cliente
+
+insert into Cliente values ('Larry','Munguia','001-123456-0098V','larrymunguia@gmail.com')
+
+restore headeronly from disk = 'D:\algo\RespaldoTaller.bak'
+
+--restore database Taller
+--from disk ='D:\algo\RespaldoTaller.bak'
+--with replace 
+
+--use Taller
+
+--select * from Cliente
+
+Backup database Taller to disk = 'D:\algo\RespaldoTaller.bak'
+with name = 'Respaldo diferencial de la BD taller',
+description = 'Respaldo dif 18/08/22',
+differential 
+
+backup log Taller to disk ='D:\algo\RespaldoTaller.bak'
+
+restore headeronly from disk = 'D:\algo\RespaldoTaller.bak'
+restore filelistonly from disk = 'D:\algo\RespaldoTaller.bak'
+
+use master
+drop database Taller
+
+restore database taller
+from disk = 'D:\algo\RespaldoTaller.bak'
+with 
+move 'Taller' to 'D:\algo\Taller.mdf',
+move 'Taller_log' to 'D:\algo\Taller_log.ldf'
+
+use taller
+go
+
+select * from Cliente
+delete from Cliente where IdCliente = 2
+
+select * from Vehiculo
+delete from Vehiculo
+
+use master
+exec sp_detach_db taller
+
+exec sp_attach_db taller,
+'D:\algo\Taller.mdf',
+'D:\algo\Taller_log.ldf'
