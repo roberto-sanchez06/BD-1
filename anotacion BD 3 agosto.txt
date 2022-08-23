@@ -98,3 +98,28 @@ beca: cod beca, nombre, requisito
 
 la pregunta para sacar la multiplicidad se debe de preguntar cuantas veces se repite el campo llave, en el caso del 
 ejemplo es una relacion de 1 a muchos 
+
+///// 23 DE AGOSTO DEL 2022
+ciclo de vida de una base de datos:
+- analisis: todos los requerimientos y operaciones en un documento 
+- diseño: verbo, sujeto, diagrama ER 
+- implementacion: script y conexion 
+- carga y/o conversion de datos: p..ej poner la informacion de correo en base de datos 
+- pruebas 
+
+proceos del diseño de una base de datos
+diseño conceptual (diagrma ER), diseño logico (gestor BD), diseño fisico
+
+proceso de diseño de una BD
+
+1. analisis de requisitos: rccopilar todos los requisitos de datos y transacciones. Factores claves: dimensionar correctamente 
+	tipos de requisitos: segun su funcion: funcionales: servicios que ha de proveer la BD
+	no funcionales: asociados a las propiedades emergentes del sistema, tiempo de respuesta, seguridad, fiabilidad, capacidad de almacenamiento
+	requisitos a abordar: segun su naturaleza: estatico, dinamico,
+	
+2. disaeño conceptural: factires; caoacudad de abstraccion, mundo real->mundo conceptural
+3. eleccion de sgbd 
+4. diseño logico
+5. diseño fisico, vistas: reportes, consultas 
+5. diseño de la carga; como se va a poblar la BD 
+	
