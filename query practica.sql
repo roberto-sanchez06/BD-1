@@ -128,3 +128,30 @@ from Pro
 group by club
 having MAX(valor_actual) > 10000
 
+--use Practica
+delete from Persona
+where apellido='Britte'
+
+insert into Persona(nombre, dni, apellido)
+values ('Sandra', 25483669, 'Britte')
+
+update Jugadores 
+set nro_camiseta=7
+where nro_camiseta=5
+
+insert into Jugadores
+values (26356312, 'Defensor', null)
+
+--creacion de tabla lesionados
+create table Lesionado(
+	Nombre char (20),
+	Apellido char (20),
+	TIempo_Inhabit integer 
+)
+drop table Persona
+
+alter table Jugadores add Nombre char(50)
+select * from Jugadores
+
+alter table Jugadores add Apellido char(50)
+select * from Jugadores
